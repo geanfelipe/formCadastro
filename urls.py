@@ -9,6 +9,7 @@ urlpatterns = patterns('',
     # (r'^gerenciador/', include('gerenciador.foo.urls')),
     (r'^$','agenda.views.lista'), #faz com que execute a funcao index() localizada dentro de agenda/views.py
     (r'^adiciona/$','agenda.views.adiciona'),
+    (r'^item/(?P<nr_item>\d+)/$','agenda.views.item'),
     # Uncomment the admin/doc line below to enable admin documentation:
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
