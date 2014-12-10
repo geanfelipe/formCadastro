@@ -6,12 +6,12 @@
 <ul>
 	{% for item in lista_itens %}
 	<li>
-		<a href="/remove/{{item.id}}/"><img = src="{{ MEDIA_URL }}imagem/lixeira.png" /></a>
+		<a href="/remove/{{item.id}}/"><img = src="{{ MEDIA_URL }}imagem/lixeira.png"/></a>
 		<a href="/item/{{item.id}}/">{{item.data|date:'d/m/Y'}}{{item.titulo}}</a>
 	</li>
-{% empty %} <!--se banco vazio envia msg-->
-	<li>Sem itens na lista</li>
-{% endfor %}
+	{% empty %} <!--se banco vazio envia msg-->
+		<li>Sem itens na lista</li>
+	{% endfor %}
 </ul>
 
 {% endblock %}

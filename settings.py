@@ -100,6 +100,8 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'agenda',
 )
+
 LOGIN_URL="/login/"
 LOGOUT_URL = '/logout/'
 LOGIN_REDIRECT_URL='/' #redirecionar p inicial depois do login
+
