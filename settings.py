@@ -94,8 +94,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'agenda',
@@ -104,4 +103,3 @@ INSTALLED_APPS = (
 LOGIN_URL="/login/"
 LOGOUT_URL = '/logout/'
 LOGIN_REDIRECT_URL='/' #redirecionar p inicial depois do login
-

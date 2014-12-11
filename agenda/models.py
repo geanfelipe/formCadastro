@@ -11,3 +11,8 @@ class ItemAgenda(models.Model):
 	titulo=models.CharField(max_length=100) #armazenará título do evento
 	descricao=models.TextField()
 	usuario = models.ForeignKey(User)
+	participantes = models.ManyToManyField(User,related_name="item_participantes")
+
+	#aparece titulo, data, hora na interface de admin na lista dos itens
+	def __unicode__(self):
+		return u"%s - %s %s " %(self.titulo, self.data, self.hora)
